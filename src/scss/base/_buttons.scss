@@ -1,0 +1,38 @@
+// Buttons
+.btn {
+    position: relative;
+    display: inline-block;
+    margin: 0.5rem 0;
+    padding: 0.8rem 2.5rem;
+    border-radius: 3rem;
+    border: 0;
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: white;
+    overflow: hidden;
+
+    &__cta {
+        color: $blue;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(53, 71, 233, 0.25);
+            opacity: 0;
+            transition: opacity 150ms ease-in-out;
+        }
+
+        &:hover {
+            color: $black;
+            font-weight: 700;
+        }
+
+        &:hover::before {
+            opacity: 1;
+        }
+    }
+}

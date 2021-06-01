@@ -1,0 +1,69 @@
+.information {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 2rem;
+
+    @include breakpoint-up(medium) {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        column-gap: 2rem;
+        padding-top: 0;
+    }
+
+    @include breakpoint-up(large) {
+        padding-top: 4rem;
+    }
+
+    &__image {
+        background-image: url('/build/img/image-1-sm.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        min-height: 15rem;
+
+        @include breakpoint-up(medium) {
+            min-height: 30rem;
+        }
+    }
+
+    &__text {
+        @include breakpoint-up(medium) {
+            max-width: 35rem;
+        }
+
+        h2,
+        p {
+            text-align: center;
+            color: white;
+            @include breakpoint-up(medium) {
+                text-align: left;
+            }
+        }
+
+        h2 {
+            margin-top: 2rem;
+            font-size: 2rem;
+
+            @include breakpoint-up(medium) {
+                margin-top: 0;
+            }
+
+            @include breakpoint-up(large) {
+                font-size: 3rem;
+            }
+        }
+
+        p {
+            font-size: 0.8rem;
+
+            @include breakpoint-up(large) {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    &__cta {
+        padding-top: 1rem;
+        text-align: center;
+    }
+}

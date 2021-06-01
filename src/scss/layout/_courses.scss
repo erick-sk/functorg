@@ -1,0 +1,71 @@
+.main {
+    @include breakpoint-up(large) {
+        margin-top: 4rem;
+    }
+    h2 {
+        margin-bottom: 0;
+        padding: 4rem 0;
+        color: white;
+        font-size: 2rem;
+
+        @include breakpoint-up(large) {
+            padding-bottom: 6rem;
+            font-size: 3rem;
+        }
+    }
+}
+
+.courses {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+
+    @include breakpoint-up(medium) {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+        // padding-top: 4rem;
+    }
+
+    .course {
+        background-color: white;
+        border-radius: 1rem;
+        box-shadow: 9px 12px 10px 3px rgba(0, 0, 0, 0.39);
+        -webkit-box-shadow: 9px 12px 10px 3px rgba(0, 0, 0, 0.39);
+        -moz-box-shadow: 9px 12px 10px 3px rgba(0, 0, 0, 0.39);
+        transition: transform 100ms ease-in-out;
+        height: auto;
+
+        &__image {
+            border-radius: 1rem 1rem 0 0;
+        }
+
+        &__info {
+            padding: 0 1rem 1rem 1rem;
+
+            h3,
+            p {
+                color: $black;
+            }
+
+            h3 {
+                padding: 2rem 0;
+                font-size: 1.2rem;
+            }
+
+            p {
+                font-size: 0.7rem;
+                line-height: 2;
+            }
+        }
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.01);
+        }
+    }
+
+    &__cta {
+        text-align: center;
+        padding-top: 2rem;
+    }
+}

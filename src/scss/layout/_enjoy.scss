@@ -1,0 +1,75 @@
+.enjoy {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @include breakpoint-up(medium) {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    @include breakpoint-up(large) {
+        margin-top: 4rem;
+    }
+
+    &__text {
+        h3 {
+            text-align: center;
+            font-size: 1.5rem;
+
+            @include breakpoint-up(medium) {
+                text-align: left;
+            }
+
+            @include breakpoint-up(large) {
+                font-size: 3rem;
+            }
+        }
+
+        p {
+            text-align: center;
+            font-size: 0.8rem;
+            padding: 1rem 0;
+
+            @include breakpoint-up(medium) {
+                text-align: left;
+            }
+
+            @include breakpoint-up(large) {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .text--active {
+        text-align: center;
+
+        a {
+            display: inline-block;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid $black;
+            font-size: 0.8rem;
+            color: $white;
+
+            &:hover {
+                transform: scale(1.01);
+            }
+        }
+        @include breakpoint-up(medium) {
+            text-align: left;
+        }
+    }
+
+    &__image {
+        background-image: url('/build/img/image-2-sm.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        min-height: 16rem;
+
+        @include breakpoint-up(medium) {
+            min-height: 30rem;
+        }
+    }
+}

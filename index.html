@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Functor-G</title>
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@400;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- fontawesone -->
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+            integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+            crossorigin="anonymous"
+        />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="build/css/app.css" />
+    </head>
+    <body>
+        <header class="header container">
+            <a href="/" class="header__logo">
+                <img src="build/img/logo-xsm.svg" alt="logo" />
+            </a>
+            <nav class="header__nav hide-for-mobile">
+                <a href="#" class="links">Inicio</a>
+                <a href="#" class="links">Cursos</a>
+                <a href="#" class="links">Nosotros</a>
+                <a href="#" class="links">Contacto</a>
+            </nav>
+        </header>
+
+        <section class="information container">
+            <div class="information__image"></div>
+
+            <div class="information__text">
+                <h2>Un lugar genial para la enseñanza digital</h2>
+                <p>
+                    Aprende con clases en vivo y a tu propio ritmo, impartido
+                    por profesionales en cada área de estudio.
+                </p>
+                <div class="information__cta">
+                    <a href="#" class="btn btn__cta">Conócenos</a>
+                </div>
+            </div>
+        </section>
+
+        <main class="main container">
+            <h2 class="text-center">Nuestros Cursos Populares</h2>
+            <div class="courses">
+                <div class="course">
+                    <img
+                        class="course__image"
+                        src="build/img/curso-marketing.jpg"
+                        alt="Curso Marketing"
+                    />
+
+                    <div class="course__info">
+                        <h3>Marketing Dígital</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Perspiciatis dolorem quibusdam corrupti quasi
+                            modi aliquid delenit
+                        </p>
+                    </div>
+                </div>
+                <div class="course">
+                    <img
+                        class="course__image"
+                        src="build/img/curso-analysis.jpg"
+                        alt="Curso Analysis"
+                    />
+
+                    <div class="course__info">
+                        <h3>Análisis de Negocios</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Perspiciatis dolorem quibusdam corrupti quasi
+                            modi aliquid delenit
+                        </p>
+                    </div>
+                </div>
+                <div class="course">
+                    <img
+                        class="course__image"
+                        src="build/img/curso-tranformation.jpg"
+                        alt="Curso"
+                    />
+
+                    <div class="course__info">
+                        <h3>Transformación Digital</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Perspiciatis dolorem quibusdam corrupti quasi
+                            modi aliquid delenit
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="courses__cta">
+                <a href="#" class="btn btn__cta">Ver Todos los Cursos</a>
+            </div>
+        </main>
+
+        <section class="enjoy container">
+            <div class="enjoy__text">
+                <h3>Conóce los Beneficios de Nuestros Cursos</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Numquam ipsam blanditiis aut maxime eum dolore unde impedit.
+                </p>
+                <div class="text--active">
+                    <a href="#">Aprender mas de nosotros</a>
+                </div>
+            </div>
+            <div class="enjoy__image"></div>
+        </section>
+
+        <section class="subscribe container">
+            <h3>Suscribete a Nuestro Boletín para más Novedades</h3>
+
+            <form class="subscribe__form" action="">
+                <input
+                    class="subscribe__mail"
+                    id="email"
+                    type="email"
+                    placeholder="Ingresa tu correo aquí..."
+                />
+                <input
+                    class="subscribe__submit"
+                    id="submit"
+                    type="submit"
+                    value="Suscribirse"
+                />
+            </form>
+            <div class="subscribe__image"></div>
+        </section>
+
+        <footer class="footer">
+            <div class="last container">
+                <div class="info">
+                    <img class="logo" src="./build/img/logo-sm.svg" alt="" />
+                    <div class="info__item">
+                        <i class="fa fa-phone"></i>
+                        <p>999999999</p>
+                    </div>
+                    <div class="info__item">
+                        <i class="far fa-envelope"></i>
+                        <p>functor@mail.com</p>
+                    </div>
+                </div>
+
+                <div class="social">
+                    <h3 class="text-center">Síguenos</h3>
+                    <div class="social__icons">
+                        <a class="fb" href="#"
+                            ><i class="fab fa-facebook fa-lg"></i
+                        ></a>
+                        <a class="in" href="#"
+                            ><i class="fab fa-instagram fa-lg"></i
+                        ></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copy">
+                <p class="text-center">
+                    Functor-G &copy; Todos los Derechos Reservados
+                </p>
+            </div>
+        </footer>
+
+        <script src="build/js/bundle.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,82 @@
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+
+    @include breakpoint-up(large) {
+        margin-top: 4rem;
+    }
+
+    h3 {
+        text-align: center;
+        @include breakpoint-up(medium) {
+            font-size: 1.5rem;
+        }
+
+        @include breakpoint-up(large) {
+            font-size: 2rem;
+        }
+    }
+
+    &__image {
+        background-image: url('/build/img/image-3-sm.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        margin-top: 2rem;
+        min-height: 15rem;
+
+        @include breakpoint-up(medium) {
+        }
+    }
+
+    &__form {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__mail {
+        padding: 0.2rem 1rem;
+        width: 14rem;
+        outline-style: none;
+
+        @include breakpoint-up(medium) {
+            width: 20rem;
+        }
+
+        @include breakpoint-up(large) {
+            width: 30rem;
+            height: 2.5rem;
+        }
+    }
+
+    &__mail::placeholder {
+        font-size: 0.6rem;
+
+        @include breakpoint-up(large) {
+            font-size: 0.8rem;
+        }
+    }
+
+    &__submit {
+        background-color: $red-light;
+        color: $white;
+        width: 4rem;
+        text-transform: uppercase;
+        transition: transform 300ms ease-in-out;
+        font-size: 0.5rem;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        @include breakpoint-up(medium) {
+            width: 6rem;
+        }
+
+        @include breakpoint-up(large) {
+            width: 8rem;
+            font-size: 0.8rem;
+        }
+    }
+}
